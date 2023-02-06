@@ -9,6 +9,7 @@
 }
 .content-container {
   width: 90%;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +23,9 @@
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
+  margin-top: 10px;
 }
+
 .app-logo {
   height: 50px;
   width: 130px;
@@ -35,6 +38,7 @@
 }
 .large {
   display: none;
+  order: 0;
 }
 .add-new-password-title {
   color: white;
@@ -53,6 +57,7 @@
   margin-top: 15px;
   padding-bottom: 25px;
   margin-bottom: 20px;
+  order: 1;
 }
 .input-container {
   width: 90%;
@@ -79,6 +84,29 @@
   color: #7683cb;
   font-size: 16px;
 }
+@media screen and (min-width: 768px) {
+  .add-password-img-container {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 25px;
+  }
+  .small {
+    display: none;
+  }
+  .large {
+    display: inline;
+  }
+  .top-img {
+    order: 1;
+  }
+  .add-new-password-container {
+    width: 50%;
+    order: 0;
+  }
+  .input-container {
+    margin-top: 25px;
+  }
+}
 .add-btn {
   align-self: flex-end;
   margin-right: 15px;
@@ -92,6 +120,7 @@
   border: none;
   outline: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 .your-password-container {
   background-color: #454f84;
@@ -107,10 +136,15 @@
 .your-password-title-search-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
-
+.your-password-title {
+  font-size: 25px;
+}
 .search-input-container {
   width: 40%;
+  max-width: 150px;
   background-color: #f8fafc;
   margin-top: 10px;
   height: 30px;
@@ -162,4 +196,29 @@
   height: 15px;
   width: 15px;
   margin-right: 10px;
+  cursor: pointer;
+}
+.password-lists-container {
+  padding-inline-start: 0%;
+  list-style-type: none;
+  width: 100%;
+}
+.no-password-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no-password-img {
+  height: 210px;
+  width: 250px;
+}
+.no-passwords-text {
+  color: white;
+  font-size: 22px;
+}
+@media screen and (min-width: 768px) {
+  .password-lists-container {
+    display: flex;
+  }
 }

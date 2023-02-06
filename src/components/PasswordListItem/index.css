@@ -1,0 +1,76 @@
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.violet {
+  background-color: violet;
+}
+.orange {
+  background-color: orange;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.yellow-green {
+  background-color: yellowgreen;
+}
+.grey {
+  background-color: gray;
+}
+
+.password-list-container {
+  border: 0.5px solid #c3caea;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 798px) {
+  .password-list-container {
+    margin: 10px;
+    width: 30%;
+  }
+}
+.name-icon {
+  height: 36px;
+  width: 36px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.initial {
+  color: white;
+  font-size: 13px;
+}
+.password-details-container {
+  margin-left: 10px;
+  width: 70%;
+}
+.password-title {
+  font-size: 16px;
+  color: white;
+  margin: 7px;
+}
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.delete-icon {
+  height: 20px;
+  width: 20px;
+}
+.star {
+  height: 20px;
+  width: 100px;
+}
